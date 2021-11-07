@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class JayConfig(AppConfig):
+class albumConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'jay'
+    name = 'album'
