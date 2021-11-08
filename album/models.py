@@ -37,9 +37,9 @@ class Album(models.Model):
 
 
 class Entry(models.Model):
-    post = models.ForignKey(Post, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
     album = models.ManyToManyField(Album)
-    title = models.CharField(max_legnth=200)
+    title = models.CharField(max_length=200)
     artist = models.ManyToManyField(Artist)
     created_at = models.DateTimeField(default=timezone.now)
     data = models.JSONField(null=True)
